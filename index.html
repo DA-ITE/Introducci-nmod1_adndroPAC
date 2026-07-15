@@ -1,0 +1,684 @@
+<div id="sise-introduccion-modulo1">
+
+<style>
+#sise-introduccion-modulo1{
+  --pink:#FF0050;
+  --pink-soft:#FFF0F5;
+  --dark:#171416;
+  --dark-2:#231F20;
+  --wine:#54152B;
+  --gray:#625B5E;
+  --light:#F8F6F7;
+  --border:#E9E1E4;
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 0 45px;
+  overflow:hidden;
+  color:var(--dark-2);
+  background:#FFFFFF;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.5;
+}
+
+#sise-introduccion-modulo1 *{
+  box-sizing:border-box;
+}
+
+#sise-introduccion-modulo1 .sise-container{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 24px;
+}
+
+/* PORTADA */
+
+#sise-introduccion-modulo1 .sise-hero{
+  position:relative;
+  overflow:hidden;
+  padding:66px 0 92px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 90% 10%,rgba(255,0,80,.25),transparent 34%),
+    radial-gradient(circle at 8% 100%,rgba(115,22,54,.45),transparent 38%),
+    linear-gradient(125deg,#151314 0%,#241B1F 52%,#4A1026 100%);
+}
+
+#sise-introduccion-modulo1 .sise-hero:before{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:-120px;
+  top:-170px;
+  border:2px solid rgba(255,255,255,.08);
+  border-radius:50%;
+}
+
+#sise-introduccion-modulo1 .sise-hero:after{
+  content:"";
+  position:absolute;
+  width:220px;
+  height:220px;
+  right:55px;
+  top:-55px;
+  border:1px solid rgba(255,0,80,.22);
+  border-radius:50%;
+}
+
+#sise-introduccion-modulo1 .sise-dot-pattern{
+  position:absolute;
+  left:24px;
+  top:22px;
+  width:105px;
+  height:75px;
+  opacity:.4;
+  background-image:radial-gradient(circle,#FF0050 1.6px,transparent 1.7px);
+  background-size:16px 16px;
+}
+
+#sise-introduccion-modulo1 .sise-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:1000px;
+}
+
+#sise-introduccion-modulo1 .sise-module-label{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:18px;
+  padding:9px 15px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  color:#FFFFFF;
+  background:rgba(255,255,255,.06);
+  font-size:13px;
+  font-weight:800;
+  letter-spacing:1.1px;
+  text-transform:uppercase;
+}
+
+#sise-introduccion-modulo1 .sise-module-dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 0 5px rgba(255,0,80,.14);
+}
+
+#sise-introduccion-modulo1 .sise-hero h1{
+  max-width:1000px;
+  margin:0 0 22px;
+  color:#FFFFFF;
+  font-size:clamp(38px,5.5vw,65px);
+  line-height:1.06;
+  font-weight:900;
+  letter-spacing:-1.8px;
+}
+
+#sise-introduccion-modulo1 .sise-hero h1 span{
+  color:var(--pink);
+}
+
+#sise-introduccion-modulo1 .sise-hero-description{
+  max-width:900px;
+  margin:0;
+  color:rgba(255,255,255,.84);
+  font-size:19px;
+  line-height:1.65;
+}
+
+/* RESULTADO DE APRENDIZAJE */
+
+#sise-introduccion-modulo1 .sise-result-wrap{
+  position:relative;
+  z-index:4;
+  max-width:1180px;
+  margin:-42px auto 38px;
+  padding:0 24px;
+}
+
+#sise-introduccion-modulo1 .sise-result-card{
+  padding:29px 31px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:17px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 96% 10%,rgba(255,0,80,.22),transparent 38%),
+    linear-gradient(135deg,#211D1F,#331421);
+  box-shadow:0 16px 38px rgba(35,31,32,.2);
+}
+
+#sise-introduccion-modulo1 .sise-result-label{
+  display:block;
+  margin-bottom:7px;
+  color:#FF7EA7;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+}
+
+#sise-introduccion-modulo1 .sise-result-card h2{
+  margin:0 0 12px;
+  color:#FFFFFF;
+  font-size:27px;
+  line-height:1.2;
+}
+
+#sise-introduccion-modulo1 .sise-result-card p{
+  margin:0;
+  color:rgba(255,255,255,.8);
+  font-size:16px;
+  line-height:1.65;
+}
+
+/* PRESENTACIÓN */
+
+#sise-introduccion-modulo1 .sise-intro{
+  margin-bottom:31px;
+  padding:24px 26px;
+  border-left:6px solid var(--pink);
+  border-radius:0 14px 14px 0;
+  background:linear-gradient(90deg,#FFF0F5,#FFF9FB);
+}
+
+#sise-introduccion-modulo1 .sise-intro p{
+  margin:0;
+  color:#433B3E;
+  font-size:17px;
+  line-height:1.65;
+}
+
+/* TEMAS */
+
+#sise-introduccion-modulo1 .sise-topic{
+  margin-bottom:34px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#FFFFFF;
+  box-shadow:0 14px 34px rgba(35,31,32,.08);
+}
+
+#sise-introduccion-modulo1 .sise-topic-header{
+  position:relative;
+  overflow:hidden;
+  padding:30px 32px;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 95% 0,rgba(255,0,80,.23),transparent 37%),
+    linear-gradient(130deg,#211D1F 0%,#421123 100%);
+}
+
+#sise-introduccion-modulo1 .sise-topic-header:after{
+  content:"";
+  position:absolute;
+  width:145px;
+  height:145px;
+  right:-42px;
+  top:-68px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;
+}
+
+#sise-introduccion-modulo1 .sise-topic-number{
+  position:relative;
+  z-index:2;
+  display:inline-block;
+  margin-bottom:10px;
+  padding:7px 13px;
+  border-radius:999px;
+  color:#FFFFFF;
+  background:var(--pink);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1px;
+}
+
+#sise-introduccion-modulo1 .sise-topic-header h2{
+  position:relative;
+  z-index:2;
+  margin:0;
+  color:#FFFFFF;
+  font-size:30px;
+  line-height:1.25;
+}
+
+#sise-introduccion-modulo1 .sise-topic-body{
+  padding:30px 32px 34px;
+}
+
+/* CONTENIDO GENERAL */
+
+#sise-introduccion-modulo1 .sise-content-box{
+  padding:25px;
+  border:1px solid #E8DFE2;
+  border-left:6px solid var(--pink);
+  border-radius:14px;
+  background:#FAF8F9;
+}
+
+#sise-introduccion-modulo1 .sise-content-box h3{
+  margin:0 0 13px;
+  color:#231F20;
+  font-size:22px;
+}
+
+#sise-introduccion-modulo1 .sise-content-box p{
+  margin:0 0 15px;
+  color:#5F575A;
+  font-size:16px;
+  line-height:1.65;
+}
+
+#sise-introduccion-modulo1 .sise-content-box p:last-child{
+  margin-bottom:0;
+}
+
+#sise-introduccion-modulo1 .sise-topic-points{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:13px;
+  margin-top:21px;
+}
+
+#sise-introduccion-modulo1 .sise-point{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  padding:16px;
+  border:1px solid #EEE5E8;
+  border-radius:12px;
+  background:#FFFFFF;
+}
+
+#sise-introduccion-modulo1 .sise-point-number{
+  display:flex;
+  flex:0 0 34px;
+  align-items:center;
+  justify-content:center;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  color:#FFFFFF;
+  background:var(--pink);
+  font-size:13px;
+  font-weight:800;
+}
+
+#sise-introduccion-modulo1 .sise-point p{
+  margin:0;
+  color:#5F575A;
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* CIERRE */
+
+#sise-introduccion-modulo1 .sise-closing{
+  margin-top:8px;
+  padding:30px;
+  border-radius:17px;
+  text-align:center;
+  color:#FFFFFF;
+  background:
+    radial-gradient(circle at 15% 90%,rgba(255,0,80,.16),transparent 35%),
+    radial-gradient(circle at 90% 10%,rgba(255,0,80,.24),transparent 35%),
+    linear-gradient(135deg,#171416,#35111F);
+}
+
+#sise-introduccion-modulo1 .sise-closing h2{
+  margin:0 0 12px;
+  color:#FFFFFF;
+  font-size:29px;
+}
+
+#sise-introduccion-modulo1 .sise-closing p{
+  max-width:780px;
+  margin:0 auto 24px;
+  color:rgba(255,255,255,.8);
+  font-size:16px;
+  line-height:1.65;
+}
+
+#sise-introduccion-modulo1 .sise-continue-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:190px;
+  min-height:50px;
+  padding:14px 26px;
+  border-radius:10px;
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#FF0050,#DE0046);
+  box-shadow:0 12px 25px rgba(255,0,80,.26);
+  text-decoration:none;
+  font-size:16px;
+  font-weight:800;
+}
+
+#sise-introduccion-modulo1 .sise-continue-button:hover{
+  color:#FFFFFF;
+  background:linear-gradient(135deg,#E80049,#C9003F);
+  transform:translateY(-2px);
+  box-shadow:0 16px 30px rgba(255,0,80,.34);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:850px){
+
+  #sise-introduccion-modulo1 .sise-topic-points{
+    grid-template-columns:1fr;
+  }
+}
+
+@media screen and (max-width:600px){
+
+  #sise-introduccion-modulo1 .sise-container,
+  #sise-introduccion-modulo1 .sise-result-wrap{
+    padding-left:16px;
+    padding-right:16px;
+  }
+
+  #sise-introduccion-modulo1 .sise-hero{
+    padding:46px 0 74px;
+  }
+
+  #sise-introduccion-modulo1 .sise-hero h1{
+    font-size:37px;
+    letter-spacing:-1px;
+  }
+
+  #sise-introduccion-modulo1 .sise-hero-description{
+    font-size:17px;
+  }
+
+  #sise-introduccion-modulo1 .sise-result-card{
+    padding:24px 21px;
+  }
+
+  #sise-introduccion-modulo1 .sise-result-card h2{
+    font-size:24px;
+  }
+
+  #sise-introduccion-modulo1 .sise-topic-header,
+  #sise-introduccion-modulo1 .sise-topic-body{
+    padding:24px 20px;
+  }
+
+  #sise-introduccion-modulo1 .sise-topic-header h2{
+    font-size:25px;
+  }
+
+  #sise-introduccion-modulo1 .sise-continue-button{
+    width:100%;
+  }
+}
+</style>
+
+<div class="sise-hero">
+
+  <div class="sise-dot-pattern"></div>
+
+  <div class="sise-container">
+
+    <div class="sise-hero-content">
+
+      <div class="sise-module-label">
+        <span class="sise-module-dot"></span>
+        Módulo 1
+      </div>
+
+      <h1>
+        Comprendiendo al <span>estudiante adulto</span> y su participación en entornos virtuales
+      </h1>
+
+      <p class="sise-hero-description">
+        En este módulo conocerás las características, motivaciones y
+        necesidades del estudiante adulto, así como las estrategias que
+        favorecen su activación y participación significativa en entornos
+        virtuales.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="sise-result-wrap">
+
+  <div class="sise-result-card">
+
+    <span class="sise-result-label">
+      Resultado de aprendizaje del módulo
+    </span>
+
+    <h2>¿Qué lograrás al finalizar?</h2>
+
+    <p>
+      Analizar las características, motivaciones y necesidades del estudiante
+      adulto aplicando principios andragógicos, estrategias de
+      <em>engagement</em> y activación cognitiva para diagnosticar
+      oportunidades de mejora en experiencias virtuales mediante el análisis
+      de situaciones reales de enseñanza.
+    </p>
+
+  </div>
+
+</div>
+
+<div class="sise-container">
+
+  <div class="sise-intro">
+
+    <p>
+      Durante este módulo abordarás dos temas relacionados con la comprensión
+      del estudiante adulto y su participación en experiencias virtuales.
+      Analizarás situaciones reales de enseñanza y reconocerás oportunidades
+      para fortalecer la motivación, la activación cognitiva y el compromiso
+      de los estudiantes.
+    </p>
+
+  </div>
+
+  <section class="sise-topic">
+
+    <div class="sise-topic-header">
+
+      <span class="sise-topic-number">
+        TEMA 01
+      </span>
+
+      <h2>
+        El estudiante adulto y sus motivaciones de aprendizaje
+      </h2>
+
+    </div>
+
+    <div class="sise-topic-body">
+
+      <div class="sise-content-box">
+
+        <h3>¿Qué veremos en este tema?</h3>
+
+        <p>
+          En este tema conocerás los principales fundamentos de la andragogía
+          y las características que diferencian el aprendizaje adulto de otras
+          etapas formativas. Analizarás cómo influyen la experiencia previa,
+          la autonomía, las metas personales y la aplicación práctica de los
+          contenidos en la motivación para aprender.
+        </p>
+
+        <p>
+          También revisarás situaciones reales de enseñanza para reconocer
+          las necesidades, intereses y posibles barreras que pueden afectar la
+          participación de los estudiantes adultos en un entorno virtual.
+        </p>
+
+        <div class="sise-topic-points">
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">01</span>
+
+            <p>
+              Principios de la andragogía y características del aprendizaje
+              adulto.
+            </p>
+
+          </div>
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">02</span>
+
+            <p>
+              Motivaciones, expectativas y necesidades del estudiante adulto.
+            </p>
+
+          </div>
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">03</span>
+
+            <p>
+              Influencia de la experiencia previa y la autonomía en el
+              aprendizaje.
+            </p>
+
+          </div>
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">04</span>
+
+            <p>
+              Diagnóstico del perfil del estudiante en situaciones reales de
+              enseñanza.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="sise-topic">
+
+    <div class="sise-topic-header">
+
+      <span class="sise-topic-number">
+        TEMA 02
+      </span>
+
+      <h2>
+        Activación y engagement en entornos virtuales
+      </h2>
+
+    </div>
+
+    <div class="sise-topic-body">
+
+      <div class="sise-content-box">
+
+        <h3>¿Qué veremos en este tema?</h3>
+
+        <p>
+          En este tema analizarás el significado del
+          <em>engagement</em> y su relación con la participación significativa
+          en experiencias virtuales. Identificarás las diferencias entre una
+          actividad entretenida, una interacción superficial y una experiencia
+          que realmente activa el pensamiento y favorece el aprendizaje.
+        </p>
+
+        <p>
+          Asimismo, conocerás estrategias para diseñar aperturas pedagógicas
+          que generen curiosidad, conecten con la experiencia del estudiante y
+          promuevan una participación activa desde el inicio de una sesión
+          virtual.
+        </p>
+
+        <div class="sise-topic-points">
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">01</span>
+
+            <p>
+              Concepto de engagement y participación significativa.
+            </p>
+
+          </div>
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">02</span>
+
+            <p>
+              Diferencias entre interacción, entretenimiento y aprendizaje.
+            </p>
+
+          </div>
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">03</span>
+
+            <p>
+              Estrategias de activación cognitiva en entornos virtuales.
+            </p>
+
+          </div>
+
+          <div class="sise-point">
+
+            <span class="sise-point-number">04</span>
+
+            <p>
+              Diseño de aperturas pedagógicas conectadas con situaciones
+              reales.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="sise-closing">
+
+    <h2>
+      Comprender para diseñar mejores experiencias
+    </h2>
+
+    <p>
+      Este módulo te permitirá reconocer quién es el estudiante adulto, qué
+      factores influyen en su motivación y cómo diseñar experiencias virtuales
+      que promuevan una participación auténtica, activa y significativa.
+    </p>
+
+    <a
+      class="sise-continue-button"
+      href="https://aulad.educad.pe/courses/536/modules">
+      Continuar&nbsp; →
+    </a>
+
+  </div>
+
+</div>
+
+</div>
